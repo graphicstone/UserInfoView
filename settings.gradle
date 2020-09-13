@@ -1,0 +1,3 @@
+include ':userinfoview'
+include ':app'
+rootProject.name = "UserInfoView"

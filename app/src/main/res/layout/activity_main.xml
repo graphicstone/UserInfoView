@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <com.nullbyte.userinfoview.UserInfoView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:backgroundColor="@color/colorGrey"
+        app:cornerRadius="@dimen/dp_8"
+        app:image="@drawable/ic_image_black_24dp"
+        app:subtitle="next text"
+        app:subtitleTextColor="@color/colorWhite"
+        app:subtitleTextSize="@dimen/sp_18"
+        app:tag="check"
+        app:tagTextColor="@color/colorWhite"
+        app:tagTextSize="@dimen/sp_10"
+        app:title="new text"
+        app:titleTextColor="@color/colorWhite"
+        app:titleTextSize="@dimen/sp_20" />
+
+</LinearLayout>
