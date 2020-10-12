@@ -7,6 +7,8 @@ import android.view.View
 import androidx.appcompat.content.res.AppCompatResources
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.content.ContextCompat
+import com.squareup.picasso.Picasso
+import jp.wasabeef.picasso.transformations.RoundedCornersTransformation
 import kotlinx.android.synthetic.main.user_info_view_layout.view.*
 
 class UserInfoView @JvmOverloads constructor(context: Context, attrs: AttributeSet? = null, defStyleAttr: Int = 0) :
@@ -52,5 +54,15 @@ class UserInfoView @JvmOverloads constructor(context: Context, attrs: AttributeS
         } finally {
             typedArray.recycle()
         }
+    }
+
+    fun loadImageFromUrl(url: String) {
+        val avatarSize = 80
+        Picasso.get()
+            .load(url)
+            .transform(RoundedCornersTransformation(avatarSize, 0))
+            .resize(avatarSize, avatarSize)
+            .centerCrop()
+            .into(iv_avatar)
     }
 }
