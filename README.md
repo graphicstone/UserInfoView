@@ -1,10 +1,12 @@
 # UserInfoView [![](https://jitpack.io/v/graphicstone/UserInfoView.svg)](https://jitpack.io/#graphicstone/UserInfoView)
 A UserInfoView for android to easily create a UserViewCard with title, subtitle, tag and image in it. You can easily customize the view through xml attributes that are
-present there. Support for changing these attributes through Java/Kotlin code would be provided in the upcoming release. 
+present there.
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/graphicstone/UserInfoView/master/UserInfoView.png" width="620" height="150" title="UserInfoView" align="middle" hspace="40">
-</p>
+</p><br>
+
+<b>Note: Now you can change the image at run time programmatically in v1.0.</b><br>
 
 ## Gradle
 #### Step 1: Add it in your root build.gradle at the end of repositories:
@@ -63,7 +65,7 @@ present there. Support for changing these attributes through Java/Kotlin code wo
 ```
 
 ## Limitations
-- User can only customize the view through XML attributes and not through Java/Kotlin code.
+- User can only customize the TextViews through XML attributes and not through Java/Kotlin code.
 - Background color for ImageView and TagView is set to colorAccent and cannot be changed as of now.
 - Stroke color for ImageView is set to colorPrimaryDark and cannot be changed as of now.
 
